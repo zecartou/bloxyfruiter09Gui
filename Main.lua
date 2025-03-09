@@ -26,7 +26,7 @@ GeneralSection:AddSlider("Speed", 0, 16, 999, 1, function(State)
 end)
 
 GeneralSection:AddButton("Remote Event Viewer", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/RemoteEventViewer"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/RemoteEventViewer.lua"))()
 end)
 
 SomeScriptSection:AddButton("Infinite Yield", function()
