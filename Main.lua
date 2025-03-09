@@ -1,7 +1,8 @@
-local Version = 2.0
+local Version = 1.9
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/xh3HRfBw"))()
 local RequiredVersion = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/bloxyfruiter09Gui/refs/heads/main/Version.lua"))()
 local Window = Library:CreateWindow("bloxyfruiter09 Gui", Vector2.new(492, 598), Enum.KeyCode.RightControl)
+local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/MessageBoxAsync.lua"))()
 
 local GeneralTab = Window:CreateTab("General") 
 local ScriptHubTab = Window:CreateTab("Script Hub") 
@@ -13,8 +14,7 @@ local LuckyBlockBattlegroundSection = ScriptHubTab:CreateSector("Lucky Block Bat
 local TheStrongestBattlegroundSection = ScriptHubTab:CreateSector("The Strongest Battleground", "Left")
 
 if Version ~= RequiredVersion then
-local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/NotificationGUI/main/source.lua"))()
-MessageBox.Show({Position = UDim2.new(0.5,0,0.5,0), Text = "Information", Description = "Incorrect Version.", MessageBoxIcon = "Question", MessageBoxButtons = "OK"})
+    MessageBox("Error", "Please switch to the latest version.\nCurrent version: "..Version.."\nRequired version: "..RequiredVersion)
 end
 
 GeneralSection:AddButton("Fly Gui", function()
