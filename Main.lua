@@ -1,4 +1,4 @@
-local Version = 1.9
+local Version = 2.0
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/xh3HRfBw"))()
 local RequiredVersion = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/bloxyfruiter09Gui/refs/heads/main/Version.lua"))()
 local Window = Library:CreateWindow("bloxyfruiter09 Gui", Vector2.new(492, 598), Enum.KeyCode.RightControl)
