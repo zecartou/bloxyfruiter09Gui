@@ -45,6 +45,10 @@ SomeScriptSection:AddButton("Dex", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JepDeveloper/Dex-Explorer-V4/refs/heads/main/EEE.lua"))()
 end)
 
+SomeScriptSection:AddButton("Rem", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/Rem.lua"))()
+end)
+
 SomeScriptSection:AddButton("Speed Hub", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Speed-Hub-x-29294"))()
 end)
