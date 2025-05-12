@@ -9,6 +9,7 @@ local ScriptHubTab = Window:CreateTab("Script Hub")
 
 local GeneralSection = GeneralTab:CreateSector("Basic Script", "Left")
 local SomeScriptSection = ScriptHubTab:CreateSector("Some Script", "Left")
+local DeadRailsSection = ScriptHubTab:CreateSector("Dead Rails Keyless OP Script", "Left")
 local FlingThingAndPeopleSection = ScriptHubTab:CreateSector("Fling Thing And People", "Left")
 local LuckyBlockBattlegroundSection = ScriptHubTab:CreateSector("Lucky Block Battleground", "Left")
 local TheStrongestBattlegroundSection = ScriptHubTab:CreateSector("The Strongest Battleground", "Left")
@@ -47,6 +48,10 @@ end)
 
 SomeScriptSection:AddButton("Rem", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/Rem.lua"))()
+end)
+
+DeadRailsSection:AddButton("Dead Rails Keyless OP Script", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/DeadRails"))()
 end)
 
 SomeScriptSection:AddButton("Speed Hub", function()
