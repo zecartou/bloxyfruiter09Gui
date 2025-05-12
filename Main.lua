@@ -9,7 +9,7 @@ local ScriptHubTab = Window:CreateTab("Script Hub")
 
 local GeneralSection = GeneralTab:CreateSector("Basic Script", "Left")
 local SomeScriptSection = ScriptHubTab:CreateSector("Some Script", "Left")
-local DeadRailsSection = ScriptHubTab:CreateSector("Dead Rails Keyless OP Script", "Left")
+local DeadRailsSection = ScriptHubTab:CreateSector("Dead Rails", "Left")
 local FlingThingAndPeopleSection = ScriptHubTab:CreateSector("Fling Thing And People", "Left")
 local LuckyBlockBattlegroundSection = ScriptHubTab:CreateSector("Lucky Block Battleground", "Left")
 local TheStrongestBattlegroundSection = ScriptHubTab:CreateSector("The Strongest Battleground", "Left")
