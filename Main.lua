@@ -50,8 +50,12 @@ SomeScriptSection:AddButton("Rem", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/Rem.lua"))()
 end)
 
-DeadRailsSection:AddButton("Dead Rails Keyless OP Script", function()
+DeadRailsSection:AddButton("Dead Rails OP Script", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/DeadRails"))()
+end)
+
+DeadRailsSection:AddButton("Dead Rails NatHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/NatHub.lua"))()
 end)
 
 SomeScriptSection:AddButton("Speed Hub", function()
