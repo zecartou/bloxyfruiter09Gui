@@ -59,7 +59,7 @@ DeadRailsSection:AddButton("Dead Rails NatHub", function()
 end)
 
 DeadRailsSection:AddButton("Dead Rails RINGTA", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/bloxyfruiter09Gui/refs/heads/main/Main.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWFIXEDUI.github.io/refs/heads/main/ui.lua"))()
 end)
 
 SomeScriptSection:AddButton("Speed Hub", function()
