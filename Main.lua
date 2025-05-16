@@ -58,6 +58,10 @@ DeadRailsSection:AddButton("Dead Rails NatHub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/NatHub.lua"))()
 end)
 
+DeadRailsSection:AddButton("Dead Rails RINGTA", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/bloxyfruiter09Gui/refs/heads/main/Main.lua"))()
+end)
+
 SomeScriptSection:AddButton("Speed Hub", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Speed-Hub-x-29294"))()
 end)
