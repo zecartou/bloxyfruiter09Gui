@@ -18,6 +18,10 @@ if Version ~= RequiredVersion then
     MessageBox("Error", "Please switch to the latest version.\nCurrent version: "..Version.."\nRequired version: "..RequiredVersion)
 end
 
+GeneralSection:AddButton("Bypass AC (Laggy)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWNENEW.github.io/refs/heads/main/newanti.lua"))()
+end)
+
 GeneralSection:AddButton("Fly Gui", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/TcQwtjNs"))()
 end)
