@@ -12,6 +12,7 @@ local SomeScriptSection = ScriptHubTab:CreateSector("Some Script", "Left")
 local DeadRailsSection = ScriptHubTab:CreateSector("Dead Rails", "Left")
 local FlingThingAndPeopleSection = ScriptHubTab:CreateSector("Fling Thing And People", "Left")
 local LuckyBlockBattlegroundSection = ScriptHubTab:CreateSector("Lucky Block Battleground", "Left")
+local DoorsSection = ScriptHubTab:CreateSector("Lucky Block Battleground", "Left")
 local TheStrongestBattlegroundSection = ScriptHubTab:CreateSector("The Strongest Battleground", "Left")
 
 if Version ~= RequiredVersion then
@@ -36,6 +37,10 @@ end)
 
 SomeScriptSection:AddButton("Infinite Yield", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+SomeScriptSection:AddButton("Doors", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
 end)
 
 SomeScriptSection:AddButton("Orca Hub", function()
