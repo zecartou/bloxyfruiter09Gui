@@ -1,7 +1,7 @@
 local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/MessageBoxAsync.lua"))()
 print("I am actually rescripting bloxyfruiter09 Gui, i dint want to but i had to do it beacause every library i know got deleted (and i think i know why)... Thank for waiting and thank for using the gui")
 MessageBox("Info", "I am actually rescripting bloxyfruiter09 Gui, i dint want to but i had to do it beacause every library i know got deleted (and i think i know why)... Thank for waiting and thank for using the gui")
---[[
+
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
@@ -25,10 +25,10 @@ local Options = Fluent.Options
 
 do
     Tabs.General:AddButton({
-        Title = ""
-        Description = ""
+        Title = "Test"
+        Description = "Ignore: Button i made will rescripting gui"
         CallBack = function ()
-            Window
+            print("Test")
         end
     })
-]]
+}
