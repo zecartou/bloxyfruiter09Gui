@@ -1,3 +1,6 @@
+local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/MessageBoxAsync.lua"))()
+MessageBox("Info", "I am actually rescripting bloxyfruiter09 Gui, i dint want to but i had to do it beacause every library i know got deleted... Thank for waiting and thank for using the gui")
+--[[
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
@@ -27,3 +30,4 @@ do
             Window
         end
     })
+]]
