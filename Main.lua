@@ -41,7 +41,7 @@ Tabs.General:AddButton({
     end
 })
 
-Tabs.Main:AddSlider("Slider", {
+Tabs.General:AddSlider("Slider", {
     Title = "Speed",
     Description = "Speed changer slider",
     Default = 16,
