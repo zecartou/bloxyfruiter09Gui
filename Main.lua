@@ -23,6 +23,8 @@ local Tabs = {
 
 local Options = Fluent.Options
 
+
+
 Tabs.General:AddButton({
     Title = "Test",
     Description = "Ignore: It a button i made while rescripting the gui",
@@ -85,7 +87,7 @@ Tabs.General:AddButton({
 
 Tabs.General:AddButton({
     Title = "Ghost Hub",
-    Description = "Brookhaven Sound Player In 👀.",
+    Description = "Fly Gui a random developer made.",
     CallBack = function ()
         loadstring(game:HttpGet("https://pastebin.com/raw/TcQwtjNs"))()
     end
