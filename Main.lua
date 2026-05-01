@@ -1,6 +1,6 @@
 local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/MessageBoxAsync.lua"))()
 local RequiredVersion = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/bloxyfruiter09Gui/refs/heads/main/Version.lua"))()
-local Version = 2.1
+local Version = 2.2
 if Version ~= RequiredVersion then
     MessageBox:Async("bloxyfruiter09's Gui", "Please switch to the latest version.\nCurrent version: ".. Version .."\nRequired version: "..RequiredVersion .. "\nYou can get the last version with this link: https://github.com/zecartou/bloxyfruiter09Gui/")
 end
