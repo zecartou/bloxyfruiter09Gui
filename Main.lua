@@ -1,5 +1,9 @@
 local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/MessageBoxAsync.lua"))()
-MessageBox:Async("bloxyfruiter09's Gui", "[BETA]")
+local RequiredVersion = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/bloxyfruiter09Gui/refs/heads/main/Version.lua"))()
+local Version = 2.1
+if Version ~= RequiredVersion then
+    MessageBox:Async("bloxyfruiter09's Gui", "Please switch to the latest version.\nCurrent version: ".. Version .."\nRequired version: "..RequiredVersion .. "\nYou can get the last version with this link: https://github.com/zecartou/bloxyfruiter09Gui/")
+end
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
@@ -7,12 +11,12 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 
 local Window = Fluent:CreateWindow({
     Title = "bloxyfruiter09's Gui v2",
-    SubTitle = "by bloxyfruiter09, grendudd",
+    SubTitle = "by bloxyfruiter09, FBS",
     TabWidth = 160,
-    Size = UDim2.fromOffset(580, 460),
+    Size = UDim2.fromOffset(600, 400),
     Acrylic = true,
     Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl
+    MinimizeKey = Enum.KeyCode.RightControl
 })
 
 local Tabs = {
@@ -22,9 +26,11 @@ local Tabs = {
 
 local Options = Fluent.Options
 
-Tabs.General:AddButton({
+Tabs.General:AddKeybind("Keybind", {
     Title = "Clear Error",
-    Description = "If you are OG i said i was macking an toggle... This clear kick error but dosent reconnect you to same exact server instance.",
+    Mode = "Toggle",
+    Default = "B",
+    Description = "This clear kick error but dosent reconnect you to same exact server instance.",
     Callback = function ()
         print("Test")
     end
