@@ -1,14 +1,13 @@
 local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/MessageBoxAsync.lua"))()
-print("I am actually rescripting bloxyfruiter09 Gui,\ni dint want to but i had to do it beacause every\nlibrary i know got deleted\n(and i think i know why)...\nThank for waiting and\nthank for using the gui")
-MessageBox:Async("Info", "I am actually rescripting bloxyfruiter09 Gui, i dint want to but i had to do it beacause every library i know got deleted (and i think i know why)... Thank for waiting and thank for using the gui")
+MessageBox:Async("bloxyfruiter09's Gui", "[BETA]")
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Fluent " .. Fluent.Version,
-    SubTitle = "by dawid",
+    Title = "bloxyfruiter09's Gui v2",
+    SubTitle = "by bloxyfruiter09, grendudd",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true,
@@ -23,20 +22,10 @@ local Tabs = {
 
 local Options = Fluent.Options
 
-
-
-Tabs.General:AddButton({
-    Title = "Test",
-    Description = "Ignore: It a button i made while rescripting the gui",
-    CallBack = function ()
-        print("Test")
-    end
-})
-
 Tabs.General:AddButton({
     Title = "Clear Error",
     Description = "If you are OG i said i was macking an toggle... This clear kick error but dosent reconnect you to same exact server instance.",
-    CallBack = function ()
+    Callback = function ()
         print("Test")
     end
 })
@@ -55,8 +44,8 @@ Tabs.General:AddSlider("Slider", {
 
 Tabs.General:AddButton({
     Title = "Remote Event Viewer",
-    Description = "Also took from a random developer.",
-    CallBack = function ()
+    Description = "Used for debug but now used for exploit.",
+    Callback = function ()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/zecartou/Script/refs/heads/main/RemoteEventViewer.lua"))()
     end
 })
@@ -64,31 +53,31 @@ Tabs.General:AddButton({
 Tabs.General:AddButton({
     Title = "Infinite Yield",
     Description = "The most advanced admin script in all the exploit story.",
-    CallBack = function ()
+    Callback = function ()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end
 })
 
 Tabs.General:AddButton({
     Title = "Orca Hub",
-    Description = "Fly Gui a random developer made.",
-    CallBack = function ()
+    Description = "Cool and modern UI Design, it like a control center.",
+    Callback = function ()
         loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua'))()
     end
 })
 
 Tabs.General:AddButton({
     Title = "Vectuel [Probably deleted]",
-    Description = "Library with others script dosent work on certain executor.",
-    CallBack = function ()
+    Description = "Library with others script doesn't work on certain executor.",
+    Callback = function ()
         loadstring(game:HttpGet("https://pastebin.com/raw/TcQwtjNs"))()
     end
 })
 
 Tabs.General:AddButton({
     Title = "Ghost Hub",
-    Description = "Fly Gui a random developer made.",
-    CallBack = function ()
+    Description = "Ghost Hub it a simple hub.",
+    Callback = function ()
         loadstring(game:HttpGet("https://pastebin.com/raw/TcQwtjNs"))()
     end
 })
@@ -96,7 +85,30 @@ Tabs.General:AddButton({
 Tabs.ScriptHub:AddButton({
     Title = "TrashCan Man Moveset",
     Description = "The Strongest Battleground: TrashCan Man Moveset Kit i found",
-    CallBack = function ()
+    Callback = function ()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man", true))()
+    end
+})
+
+Tabs.ScriptHub:AddButton({
+    Title = "RIVALS SilentAim",
+    Description = "RIVALS SilentAim ajustable FOV and toggleable Show FOW and AutoFire",
+    Callback = function ()
+        loadstring(game:HttpGet("https://pastebin.com/raw/JAZwiU1R",true))()
+    end
+})
+
+Tabs.ScriptHub:AddButton({
+    Title = "RIVALS Z3US HUB",
+    Description = "RIVALS Hub i found, has lot of features including SilentAim, Aimbot, Arcade Mode auto collector and more! Once loaded press CTRL to toggle.",
+    Callback = function ()
+    		repeat task.wait() until game:IsLoaded()
+			repeat task.wait() until game:GetService("Players").LocalPlayer and game:GetService("Players").LocalPlayer.Character
+			repeat task.wait() until not game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("LoadingScreen")
+			getgenv().autoload = false
+			getgenv().silentload = true
+			getgenv().SCRIPT_KEY = ""
+			loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/8be52e21a0145a401c446ca7ab2b5df9bd327ea80b0cf1d2fe99e442edd0f9c9/download"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/Z3US/refs/heads/main/Games/Test.lua"))()
     end
 })
