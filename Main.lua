@@ -97,6 +97,14 @@ Tabs.ScriptHub:AddButton({
 })
 
 Tabs.ScriptHub:AddButton({
+    Title = "VoidWare",
+	Description = "99 Night in the Forest: VoidWare by VapeVoid is the largest game script which contain everything to win in one simple click. Also take lot of time to load",
+    Callback = function ()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))()
+    end
+})
+
+Tabs.ScriptHub:AddButton({
     Title = "RIVALS SilentAim",
     Description = "RIVALS SilentAim ajustable FOV and toggleable Show FOW and AutoFire",
     Callback = function ()
