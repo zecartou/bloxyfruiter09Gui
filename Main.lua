@@ -97,6 +97,14 @@ Tabs.ScriptHub:AddButton({
 })
 
 Tabs.ScriptHub:AddButton({
+    Title = "Super Ring",
+    Description = "UNIVERSAL: Super Ring V6",
+    Callback = function ()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/chesslovers69/Super-ring-parts-v6/refs/heads/main/Bylukaslol"))()
+    end
+})
+
+Tabs.ScriptHub:AddButton({
     Title = "VoidWare",
 	Description = "99 Night in the Forest: VoidWare by VapeVoid is the largest game script which contain everything to win in one simple click. Also take lot of time to load",
     Callback = function ()
